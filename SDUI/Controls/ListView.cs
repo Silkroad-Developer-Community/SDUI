@@ -290,7 +290,16 @@ public class ListView : System.Windows.Forms.ListView
         else if (m.Msg != WM_KILLFOCUS && (m.Msg == WM_HSCROLL || m.Msg == WM_VSCROLL))
             Invalidate();
 
-        base.WndProc(ref m);
+        try
+        {
+            base.WndProc(ref m);
+        }
+        catch (InvalidOperationException)
+        {
+            // Suppress concurrent collection modification errors caused by
+            // background threads updating ListView items while the UI thread
+            // processes messages (e.g. sorting via CompareFunc).
+        }
     }
 
     public void SetSortArrow(int column, SortOrder sortOrder)
