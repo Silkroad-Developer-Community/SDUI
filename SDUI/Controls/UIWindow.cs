@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -1352,7 +1352,7 @@ public class UIWindow : UIWindowBase
                 graphics.DrawRectangle(hoverColor, activePageRect.X, 0, width, _titleHeightDPI);
                 graphics.FillRectangle(hoverColor, x, 0, width, _titleHeightDPI);
                 graphics.FillRectangle(
-                    Color.DodgerBlue,
+                    ColorScheme.AccentColor,
                     x,
                     _titleHeightDPI - TAB_INDICATOR_HEIGHT,
                     width,

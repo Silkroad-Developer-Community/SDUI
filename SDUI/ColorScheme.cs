@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 
 namespace SDUI;
 
@@ -32,7 +32,7 @@ public class ColorScheme
     /// <summary>
     /// Gets theme accent color
     /// </summary>
-    public static Color AccentColor => Color.FromArgb(0, 92, 252);
+    public static Color AccentColor => Color.FromArgb(202, 179, 139);
 
     /// <summary>
     /// Gets or sets the debug borders

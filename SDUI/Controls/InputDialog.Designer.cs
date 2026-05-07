@@ -91,7 +91,7 @@ namespace SDUI.Controls
             // 
             // btnOK
             // 
-            btnOK.Color = System.Drawing.Color.DodgerBlue;
+            btnOK.Color = System.Drawing.Color.FromArgb(202, 179, 139);
             btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             btnOK.ForeColor = System.Drawing.Color.White;
             btnOK.Location = new System.Drawing.Point(11, 6);
