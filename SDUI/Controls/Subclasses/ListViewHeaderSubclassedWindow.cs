@@ -10,7 +10,7 @@ namespace SDUI.Controls.Subclasses
     class ListViewHeaderSubclassedWindow : MarshalByRefObject, System.Windows.Forms.IWin32Window
     {
         // prevents collection of ListViewHeaderSubclassedWindow that is still in use
-        static private HashSet<ListViewHeaderSubclassedWindow> _instancesInUse = new();
+        private static HashSet<ListViewHeaderSubclassedWindow> _instancesInUse = new();
 
         // The number of uses we still have for this instances:
         // - some window attached, or
